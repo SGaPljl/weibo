@@ -13,8 +13,13 @@ $(function(){
 
 })
 $(function(){
-    $('.search-text').click(function(){
-        
+    $('.search-text').focus(function(){
+        console.log(1);
+        $('.search-down').css({"display":"block"});
+    })
+    $('.search-text').blur(function(){
+        console.log(2);
+        $('.search-down').css({"display":"none"});
     })
 })
 
